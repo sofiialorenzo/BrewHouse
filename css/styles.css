@@ -8,6 +8,10 @@
     font-style: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 nav{
     background-color: #E7E4DA;
 }
@@ -24,7 +28,110 @@ ul li:hover {
     text-decoration: underline;
 }
 
-#home{
-    background-image: url(../img/banner.png);
+h1{
+    font-family: "Playfair Display";
+}
+h2{
+    color: #452226;
+}
+
+form button{
+    background-color: #452226;
+    color: #E7E4DA;
+}
+
+form button:hover{
+    background-color: #554A46;
+    color: #E7E4DA;
+    transition: 300ms;
+}
+
+footer{
+    background-color: #452226;
+    color: #E7E4DA;
+}
+
+footer h2{
+    color: #E7E4DA;
+}
+
+.cards{
+    background-color: #E7E4DA;
+}
+
+.card-reseña{
+    background-color: white;
+}
+
+.card-reseña span{
+    color: #452226;
+}
+
+.comillas{
+    color: #452226;
+}
+
+#home button {
+    background-color: #1E130E;
+    color: #E7E4DA;
+}
+
+#home button:hover {
+    background-color: #452226;
+    color: #E7E4DA;
+    transition: 300ms;
+}
+
+#home figure{
     width: 100%;
+    height: 100%;
+}
+
+#products{
+    background-image: url(../img/fondo-flores.jpg);
+    background-repeat: no-repeat;
+}
+
+#products h2{
+    color: #E7E4DA;
+}
+
+#banner-suscripcion{
+    background-image: url(../img/granos-de-cafe.jpg);
+    color: #E7E4DA;
+}
+
+#banner-suscripcion h2{
+    color: #E7E4DA;
+}
+
+#banner-suscripcion button{
+    background-color: #1E130E;
+    color: #E7E4DA;
+}
+
+#banner-suscripcion button:hover{
+    background-color: #E7E4DA;
+    color: #1E130E;
+    transition: 300ms;
+}
+
+#blogs{
+    background-color: #554A46;
+}
+
+#blogs h2{
+    color: #E7E4DA;
+}
+
+#blogs div{
+    background-color: #E7E4DA;
+}
+
+#blogs h3{
+    font-family: "Playfair Display";
+}
+
+#blogs a{
+    color: #452226;
 }

@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BrewHouse</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/4d0f29e762.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="fixed top-0 left-0 w-full z-50 shadow-md">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-4 px-28">
               <a href="#inicio" class="flex items-center space-x-3 rtl:space-x-reverse">
                   <img src="img/Logo_BrewHouse.png" class="h-12" alt="BrewHouse Logo" />
@@ -36,20 +37,195 @@
                     <a href="#subscription" class="block py-2 px-1">Suscripción</a>
                   </li>
                   <li>
-                    <a href="#blog" class="block py-2 px-1">Blog</a>
+                    <a href="#blogs" class="block py-2 px-1">Blog</a>
                   </li>
                 </ul>
               </div>
             </div>
           </nav>          
     </header>
+    <main>
     <section id="home">
-      <div class="max-w-screen-xl mx-auto py-24 px-28">
-        <h1>Disfrutá del arte de nuestro café mes a mes.</h1>
-        <p>Suscribíte a nuestro club y recibí todos los meses nuestras mejores variedades de café molido y en grano.</p>
-        <button>Suscribirse</button>
+      <div class="flex flex-row justify-evenly items-center min-h-dvh mx-60">
+        <div>
+        <h1 class="font-bold text-5xl mb-4 text-balance">Disfrutá del arte de nuestro café mes a mes.</h1>
+        <p class="text-sm text-pretty mb-4">Suscribíte a nuestro club y recibí todos los meses nuestras mejores variedades de café molido y en grano.</p>
+        <button type="button" class="py-2 px-3 font-semibold">Suscribirse</button>
+      </div>
+        <figure>
+          <img src="img/cafe-banner.webp" alt="Granos de café">
+        </figure>
       </div>
     </section>
+    
+    <section id="about" class="py-28 mx-60">
+      <h2 class="font-semibold text-center pb-20 text-2xl">SOBRE NOSOTROS</h2>
+      <article class="grid grid-cols-2 items-center gap-8 mb-32">
+        <figure>
+          <img src="img/maquina-de-cafe.jpg" alt="Maquina de café">
+        </figure>
+        <div>
+          <p><strong>BrewHouse</strong> es el refugio perfecto para los amantes del café y los buscadores de momentos de tranquilidad. Sumérgete en un oasis de <strong>aromas frescos</strong> y <strong>sabores intensos</strong>, donde cada taza es un viaje sensorial. Con un ambiente acogedor y un servicio excepcional, en BrewHouse encontrarás un lugar para relajarte, recargar energías y disfrutar de la buena compañía.</p>
+        </div>
+      </article>
+      <article class="grid grid-cols-2 items-center gap-8">
+        <div>
+          <p>Nos apasiona ofrecerte una experiencia de café incomparable desde el primer sabor hasta el último. Nos dedicamos a seleccionar cuidadosamente los mejores granos de café, provenientes de las regiones más prestigiosas del mundo, garantizando la <strong>calidad</strong> y <strong>autenticidad</strong> en cada taza, permitiéndote saborear los matices únicos y los aromas cautivadores que solo un café de primera categoría puede ofrecer.</p>
+        </div>
+        <figure>
+          <img src="img/tipos-cafe.jpg" alt="Tipos de café">
+        </figure>
+      </article>
+    </section>
+
+    <section id="products">
+      <h2 class="font-semibold text-center py-20 text-2xl">NUESTROS PRODUCTOS</h2>
+      <article class="pb-20 mx-60 grid grid-cols-2 gap-8">
+        <div class="cards flex items-center py-12 px-8">
+          <div>
+          <h3 class="font-semibold text-xl pb-2">Cápsulas</h3>
+          <p>Disfrutá de la frescura de un café recién molido en cada cápsula.</p>
+        </div>
+        <figure class="w-32">
+          <img src="img/capsula-de-cafe.png" alt="Cápsula de café">
+        </figure>
+        </div>
+        <div class="cards flex items-center py-12 px-8">
+          <div>
+            <h3 class="font-semibold text-xl pb-2">Café</h3>
+            <p>En grano o molido, para disfrutar el café a tu manera.</p>
+          </div>
+          <figure class="w-32">
+            <img src="img/bolsa-de-cafe.png" alt="Bolsa de café">
+          </figure>
+        </div>
+      </article>
+    </section>
+
+    <section id="subscription" class="py-28 mx-60">
+      <h2 class="font-semibold text-center py-20 text-2xl">SUSCRIPCIÓN MENSUAL</h2>
+      <article class="grid grid-cols-3 gap-28 pb-20">
+        <div class="flex flex-col items-center">
+          <img src="img/tarjeta-de-membresia.png" alt="Tarjeta de membresía" class="w-20">
+          <h3 class="text-center font-semibold text-lg py-4">Elegí tu membresía</h3>
+          <p class="text-center">Ésta suscripción mensual te invita a formar parte de nuestro exclusivo club. Cada mes, recibirás una caja que incluye café seleccionado especificamente para los miembros de esta comunidad, junto a la información de su origen y proceso. Existen distintos planes pensados para que se ajusten a tu consumo.</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="img/molinillo-de-cafe.png" alt="Molinillo de café" class="w-20">
+          <h3 class="text-center font-semibold text-lg py-4">Detallá tus preferencias</h3>
+          <p class="text-center">Queremos que todos puedan formar aprte de nuestra comunidad , por lo que podes personalizar tu pedido según tus preferencias. Elegí la opción que mejor se adapte a tu cafetera o método de preparación. Tenés 3 tipos de molienda distinta. Y si la cambiás, podes modificar tu preferencia en cualquier momento.</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="img/caja-del-paquete.png" alt="Caja de paquete" class="w-20">
+          <h3 class="text-center font-semibold text-lg py-4">Recibí tu café a domicilio</h3>
+          <p class="text-center">Cada mes, recibirás en tu hogar una cuidada selección de los granos más frescos y recién tostados. Cada entrega será una experiencia única, distinta de la anterior. Explorá los diversos origenes y variedades que ofrece el mundo del café, y descubre como reconocer sus sutiles matíces. Compartí en redes tu experiencia!</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="banner-suscripcion">
+      <div class="py-16 flex flex-col items-center">
+        <h2 class="text-center font-semibold text-2xl">UNITE</h2>
+        <p class="pb-2">Para recibir el mejor café a tu casa</p>
+        <button type="submit" class="py-2 px-3 font-semibold">Suscribirse</button>
+      </div>
+    </section>
+
+    <section class="py-28 mx-60">
+      <h2 class="font-semibold text-center py-20 text-2xl">RESEÑAS DE CLIENTES</h2>
+      <article class="grid grid-cols-3 gap-20">
+        <div class="card-reseña px-12 py-8 flex flex-col items-center shadow-lg rounded-sm">
+          <div class="comillas text-4xl pb-4">❝</div>
+          <p class="text-center pb-4">"Una de las mejores deciciones que he tomado! La selección de café es fantástica, y me encanta la flexibilidad para elegir entre granos o molido. Además la información detallada sobre cada café es muy interesante."</p>
+          <span class="font-semibold">Carla. M</span>
+        </div>
+        <div class="card-reseña px-12 py-8 flex flex-col items-center shadow-lg rounded-sm">
+          <div class="comillas text-4xl pb-4">❝</div>
+          <p class="text-center pb-4">"¡Increible experiencia! Desde que descubrí BrewHouse, mi forma de disfrutar el café ha cambiado completamente. La calidad es excepcional y siempre llega en perfecto estado. ¡Lo recomiendo a todos los amantes del café!"</p>
+          <span class="font-semibold">José. L</span>
+        </div>
+        <div class="card-reseña px-12 py-8 flex flex-col items-center shadow-lg rounded-sm">
+          <div class="comillas text-4xl pb-4">❝</div>
+          <p class="text-center pb-4">"No podría estar más sastifecho. Los envíos son rápidos, y la atención al detalle en la presentación del café es impecable. Me encanta la variedad de orígenes y la facilidad para personalizar mis pedidos. ¡10/10!"</p>
+          <span class="font-semibold">María. R</span>
+        </div>
+      </article>
+    </section>
+
+    <section id="blogs">
+      <h2 class="font-semibold text-center py-20 text-2xl">NUESTRO BLOG</h2>
+      <article class="pb-20 mx-60 grid grid-cols-2 gap-12">
+        <div class="pb-4">
+          <figure>
+            <img src="img/chemex.jpg" alt="Cafetera Chemex">
+          </figure>
+          <h3 class="font-bold text-xl ml-8 mt-4">Cafetera Chemex</h3>
+          <a href="blogs.html?id=1" target="_blank" class="ml-8 text-sm hover:underline font-medium">Leer más >></a>
+        </div>
+        <div class="pb-4">
+          <figure>
+            <img src="img/maquina-granos.jpg" alt="Granos en máquina de café">
+          </figure>
+          <h3 class="font-bold text-xl ml-8 mt-4">¿Qué es el café de especialidad?</h3>
+          <a href="blogs.html?id=2" target="_blank" class="ml-8 text-sm hover:underline font-medium">Leer más >></a>
+        </div>
+        <div class="pb-4">
+          <figure>
+            <img src="img/taza de cafe.jpg" alt="Taza de café">
+          </figure>
+          <h3 class="font-bold text-xl ml-8 mt-4">Productores de café</h3>
+          <a href="blogs.html?id=3" target="_blank" class="ml-8 text-sm hover:underline font-medium">Leer más >></a>
+        </div>
+        <div class="pb-4">
+          <figure>
+            <img src="img/prensa-francesa.jpg" alt="Prensa francesa">
+          </figure>
+          <h3 class="font-bold text-xl ml-8 mt-4">Café con prensa francesa</h3>
+          <a href="blogs.html?id=4" target="_blank" class="ml-8 text-sm hover:underline font-medium">Leer más >></a>
+        </div>
+      </article>
+    </section>
+
+    <section class="py-28 mx-60">
+      <h2 class="font-semibold text-center py-20 text-2xl">¿TENÉS ALGUNA CONSULTA? CONTACTÁNOS</h2>
+      <form action="" class="flex flex-col">
+        <label for="name" class="font-semibold text-lg pb-2">Nombre</label>
+        <input type="text" name="name" id="name" placeholder="Nombre" class="text-sm py-2 px-4 border border-gray-300 mb-6">
+
+        <label for="surname" class="font-semibold text-lg pb-2">Apellido</label>
+        <input type="text" name="surname" id="surname" placeholder="Apellido" class="text-sm py-2 px-4 border border-gray-300 mb-6">
+
+        <label for="email" class="font-semibold text-lg pb-2">Correo electrónico</label>
+        <input type="email" name="email" id="email" placeholder="Correo electrónico" class="text-sm py-2 px-4 border border-gray-300 mb-6">
+
+        <label for="message" class="font-semibold text-lg pb-2">Mensaje</label>
+        <textarea name="message" id="message" placeholder="..." class="text-sm py-2 px-4 border border-gray-300 mb-6"></textarea>
+
+        <button type="submit" class="py-2 px-3 font-semibold">Enviar</button>
+      </form>
+    </section>
+  </main>
+    <footer class="mt-20 py-10">
+      <div class="grid grid-cols-3 mx-60 items-center gap-20">
+        <div class="flex flex-col items-center">
+          <h2 class="text-2xl font-semibold">BrewHouse</h2>
+          <p>Café de especialidad</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <h3 class="font-semibold text-xl">Más información</h3>
+          <a href="#" class="py-2 hover:underline">Preguntas frecuentes</a>
+          <a href="#" class="pb-2 hover:underline">Políticas de privacidad</a>
+          <a href="#" class="pb-2 hover:underline">Términos y condiciones</a>
+        </div>
+        <div>
+          <a href="#"><i class="fa-brands fa-instagram fa-xl mr-2" style="color: #e7e4da;"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in fa-xl mr-2" style="color: #e7e4da;"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter fa-xl" style="color: #e7e4da;"></i></a>
+        </div>
+      </div>
+      <hr class="mx-60 my-10">
+      <p class="text-center">Proyecto realizado por <a href="https://github.com/sofiialorenzo" class="hover:underline">Sofía Lorenzo</a> con fines educativos</p>
+    </footer>
 <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 </body>
 </html>

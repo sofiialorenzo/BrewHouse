@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/4d0f29e762.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function getBlogId() {
+            const params = new URLSearchParams(window.location.search);
+            return params.get("id");
+        }
+
+        function loadBlog() {
+            const blogId = getBlogId();
+
+            if (!blogId) {
+                document.body.innerHTML = "<p>Error: No se ha especificado el blog. </p>";
+                return;
+            }
+
+            fetch("blogs.json")
+            .then(response => response.json())
+            .then(blogs => {
+                const blog = blogs.find(b => b.id === parseInt(blogId));
+
+                if (!blog) {
+                    document.body.innerHTML = "<p>Error: No se ha encontrado el blog. </p>";
+                    return;
+                }
+
+                document.getElementById("blog-titulo").innerText = blog.titulo;
+                document.getElementById("blog-descripcion").innerText = blog.descripcion;
+                document.getElementById("blog-contenido").innerText = blog.contenido;
+                document.getElementById("blog-imagen").src = blog.imagen;
+            });
+        }
+
+        window.onload = loadBlog;
+    </script>
+</head>
+<body>
+    <main>
+        <section id="blog" class="py-28 mx-60">
+            <h1 id="blog-titulo" class="text-center text-3xl"></h1>
+            <article class="py-10">
+                <div class="grid grid-cols-2 gap-8 items-center">
+                    <p id="blog-descripcion"></p>
+                    <figure>
+                        <img id="blog-imagen" alt="Imagen blog">
+                    </figure>
+                </div>
+                <div>
+                    <p id="blog-contenido" class="mt-8"></p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+        <footer class="mt-20 py-10">
+      <div class="grid grid-cols-3 mx-60 items-center gap-20">
+        <div class="flex flex-col items-center">
+          <h2 class="text-2xl font-semibold">BrewHouse</h2>
+          <p>Café de especialidad</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <h3 class="font-semibold text-xl">Más información</h3>
+          <a href="#" class="py-2 hover:underline">Preguntas frecuentes</a>
+          <a href="#" class="pb-2 hover:underline">Políticas de privacidad</a>
+          <a href="#" class="pb-2 hover:underline">Términos y condiciones</a>
+        </div>
+        <div>
+          <a href="#"><i class="fa-brands fa-instagram fa-xl mr-2" style="color: #e7e4da;"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in fa-xl mr-2" style="color: #e7e4da;"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter fa-xl" style="color: #e7e4da;"></i></a>
+        </div>
+      </div>
+      <hr class="mx-60 my-10">
+      <p class="text-center">Proyecto realizado por <a href="https://github.com/sofiialorenzo" class="hover:underline">Sofía Lorenzo</a> con fines educativos</p>
+    </footer>
+</body>
+</html>

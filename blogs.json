@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "titulo": "La Chemex: una cafetera elegante y funcional",
+        "descripcion": "Éste es uno de los métodos de filtrado el cual el combo estética y sus resultados en la bebida final son notables. Peter Schlumbohm, un químico alemán inventor nato, desarrolló éste método de preparación con tanto impacto en sus características nombradas, que se encuentra expuesta en el Museo de Arte Moderno (MOMA) en Nueva York. La Chemex es un método de goteo, así como la V60 por ejemplo, en el cual se usa un filtro de papel (aunque también hay filtros metálicos) para que se produzca la alquimia al vertir el agua.",
+        "contenido": "Debido a las características del filtro, produce un café más limpio en la taza como así también más liviano (sin tanto cuerpo) en comparación a otros métodos y además mientras se prepara, se pueden percibir todos los aromas en su máxima expresión!",
+        "imagen": "img/chemex.jpg"
+    },
+
+    {
+        "id": 2,
+        "titulo": "¿Qué es el café de especialidad?",
+        "descripcion": "El café tiene distintas calidades y se las clasifica a partir de puntajes que realizan personas destudiosas del tema, denominadas catadores. También existen diferentes personas catadoras según  la variedad de café, esto es, están aquellas que catan la variedad Arábica, llamadas Q Graders y las que se encargan de las Robustas, Q Robustas, ya que cada variedad tienen sus características particulares. Técnicamente el café de especialidad es aquel que supera los 80 puntos en una cata profesional.  Siguiendo ciertos protocolos para evaluar atributos como aroma, sabor, cuerpo o retrogusto y detectar ciertos defectos que generen que estas características disminuyan su puntaje.",
+        "contenido": "Por otra parte, podemos distinguir al café de especialidad con el cuidado y la atención que se intenta lograr en toda la cadena de producción y distribución. Desde programas para el desarrollo en plantaciones, inversiones en equipamiento, cuidados en la distribución, tostado, almacenaje, barismo y atención al cliente por nombrar algunas. Cada etapa influye en la bebida final y en esto hace incapié el café de especialidad. Te proponemos que te des el lugar a probar el café de especialidad, recibiendo distintos orígenes, distintos cafés, métodos de preparación y descubriendo nuevas experiencias sensoriales. También recomendamos visitar cafeterías de especialidad, degustando distintos cafés y métodos de preparación, desde un espresso, un flat white a métodos filtrados.",
+        "imagen": "img/maquina-granos.jpg"
+    },
+
+    {
+        "id": 3,
+        "titulo": "Cuáles paises producen café y cuáles son los que más consumen",
+        "descripcion": "Los paises que se encuentran ubicados en lo que se denomina cinturón de café, área imaginaria entre los trópicos de Cáncer y Capricornio, son aquellos que, dado el clima necesario, son los potenciales para producir café. Sin embargo, no todos estos paises pueden producir debido a otros factores, como el suelo y propios sub-climas de zonas determinadas. Ejemplos de ésta situación podemos nombrar tanto a África, que en su lado Oriental se produce mayor cantidad de café que en la aprte Occidental que es casi mínima, y a Brasil, que sucede exactamente lo mismo. Si bien Etiopia fue donde se descubrió el café, o por lo menos así lo afirma la mitología cafetera, no es el mayor productor mundial. En cambio, Brasil, país al que el café llegó",
+        "contenido": "mucho más tarde que a otros, supo potenciar sus ventajas competitivas en clima, tierra, superficie y labor para así convertirse en el mayor productor mundial! A lo largo de la historia cafetera, los paises han ido aumentando la producción y desarrollandose con mayor inversión, capacitación e infraestructura. Si analizamos cuales son los mayores productores, podemos encontrar que no es el país originario ni tampoco los paises donde comenzó la historia del café. Brasil cuenta con el 37% de la producción mundial, secundado por Malasia, con aproximadamente el 18% y Colombia conforma el top 3 con el 5%. Por otra parte, Etiopia se encuentra en la 5ta posición, luego de Indonesia.",
+        "imagen": "img/taza de cafe.jpg"
+    },
+
+    {
+        "id": 4,
+        "titulo": "¿Cómo hacer café con el método prensa francesa?",
+        "descripcion": "Antes de contarles como preparar café con éste método, nos preguntamos ¿por qué tiene el término francesa? Si tenemos en cuenta que la versión más utilizada fue patentada por un italiano en el año 1929 por Attilio Calimani, entonces ¿no debería llamarse prensa italiana? La historia de ésta prensa en realidad comienza con los hermanos franceses Mayer y Delforge que en el año 1852 patentaron una cafetera muy similar. Dinamarca también tiene su protagonismo, debido a que una de las marcas más buscadas para este tipo de cafeteras es Bodum.",
+        "contenido": "Éste es un método que tiene varias ventajas frente a otras, y una de esas es que no utiliza filtros de papel, ya que el émbolo tiene un filtro metálico y además es una forma de preparar en la cual es muy noble, pudiendo obtener el resultado de iguales características en cada preparación. Lo primero que sugerimos hacer es calentar la cafetera con agua caliente, ya que éste es un método de preparación que lleva más de 4 minutos, con la cual la preparación se puede enfriar más rápido de lo deseado si la cafetera está fría. Luego moler el café o una molienda gruesa. Sugerimos utilizar una relación de 1 a 15, esto es para cada gramo de cafpe vertir 15 gramos de agua. Si tenés balanza lo podés hacer sin problemas, pero si no fuera el caso, tratá de utilizar medidas de cucharas y tazas así vas encontrandole las medidas aproximadas. Habiendo puesto el café, verter todo el agua en la prensa y esperar alrededor de 4 a 5 minutos, luego presionar suavemente el émbolo hasta el final y servir. Un detalle importante, fijate que todo el café este en contacto con el agua, así la extracción es pareja. Podes ayudar revolviendo gentilmente con una cuchara. Como toda preparación, va a depender también del café utilizado, pero en general se puede denominar a esta bebida como un café con cuerpo y con muchos aromas, además que ya a la vista la prensa es hermosa!",
+        "imagen": "img/prensa-francesa.jpg"
+    }
+]
